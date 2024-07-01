@@ -1,0 +1,161 @@
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    margin-top: 50px;
+}
+.start{
+    width: 52%;
+    /* border: 2px solid red; */
+    padding: 10px 20px;
+}
+.end{
+    width: 45%;
+    /* border: 2px solid red; */
+}
+.start img{
+    width: 98%;
+    height: 500px;
+    object-fit: contain;
+    /* border: 2px solid yellow ; */
+}
+.start p{
+    color: black;
+    font-size: 20px;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+}
+.end h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 40px;
+}
+.end .id{
+    color: rgb(121, 120, 120);
+}
+.end .sale{
+    margin-top: 25px;
+    display: flex;
+    gap: 0 14px;
+}
+.end .sale .left-sale{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 40px;
+}
+.end .sale .right-sale{
+    background-color: purple;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 40px;
+}
+.end .price-detail{
+    display: flex;
+    margin-top: 10px;
+    gap: 0 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.end .price-detail p{
+    font-size: 23px;
+    text-decoration: line-through;
+    color: purple;
+}
+.end .price-detail span{
+    font-size: 20px;
+}
+.end .quantity-box{
+    margin-bottom: 30px;
+}
+.end .quantity-box .b{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+.end .quantity-box .b .dec{
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.end .quantity-box .b .dec:hover{
+    background-color: #e6e6e6;
+}
+
+.end .quantity-box .b p{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.end button.cart{
+    margin-top: 50px;
+    color: purple;
+    height: 50px;
+    width: 80%;
+    margin: 40px auto;
+    border: 2px solid purple;
+    background-color: transparent;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.end button.cart:hover{
+    background-color: purple;
+    color: white;
+}
+.end .description span{
+    font-size:20px ;
+    font-weight: 500;
+}
+.end .description p{
+    text-align: justify;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width:750px){
+    
+.start{
+    width: 99%;
+    /* border: 2px solid red; */
+    
+}
+.end{
+    width: 99%;
+    /* border: 2px solid red; */
+}
+}
+@media (max-width:600px){
+    .start img{
+        height: 300px;
+        /* border: 2px solid red; */
+        
+    }
+    .end h2{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,99 @@
+.cont-list{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:50px 30px;
+}
+.cont-list .card{
+    width: 350px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 17px;
+    min-height: 400px;
+    height: 580px;
+    padding: 10px;
+    /* justify-content: space-between; */
+    cursor: pointer;
+}
+.cont-list .card:hover .img img{
+    transform: scale(1.1);
+}
+.cont-list .card .img{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        /* border: 2px solid purple; */
+        border-bottom: 2px solid purple;
+        /* padding: 20px; */
+        
+        
+}
+.cont-list .card img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor:pointer ;
+    transition: all 0.2s ease-in-out;
+}
+.cont-list .card h3{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+.cont-list .card .price{
+    display: flex;
+    justify-content: space-between;
+}
+.cont-list .card .price .left p{
+    text-decoration: line-through;
+    color: purple;
+}
+.cont-list .card .price .left{
+    display: flex;
+}
+.cont-list .card .price .left  span{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.cont-list .card .detail-list{
+    margin: 20px 0;
+}
+.cont-list .card .detail h4{
+      font-weight: 500;
+      margin: 0;
+}
+.cont-list .card .detail .p{
+    font-weight: 300;
+    margin: 0;
+}
+.cont-list .card button {
+    height: 45px;
+    color: purple;
+    border: 2px solid purple;
+    background-color: transparent;
+    /* background-color: purple; */
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out ;
+}
+.cont-list .card:hover  button{
+    background-color: purple;
+    color: white;
+}
+
+@media (max-width:600px){
+    .cont-list .card{
+        width: 97%;
+        margin: 0 10px;
+    }
+
+}
+

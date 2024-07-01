@@ -1,0 +1,305 @@
+
+.up{
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    background-color: #00b4d8;
+    border-radius: 6px;
+    font-size: 25px;
+    z-index: 999;
+    bottom: 20px;
+    right: 25px;
+    border:  2px solid #00b4d8;
+    transition: all 0.2s ease-in-out;
+}
+.up.show{
+    display: block;
+}
+.up a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBF8F3;
+    height: 45px;
+    width: 45px;
+}
+.up:hover{
+    background: none;
+}
+
+/* similar style for all sections */
+section{
+    font-family: "poppins" , sans-serif;
+    background-color: #FBF8F3;
+}
+.max-width .title{
+    font-family: 'ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    position: relative;
+}
+
+
+/* //////////////////////////////////////////////// */
+header{
+    background: url(banner.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.max-width{
+    padding: 0 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
+
+.reviews{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 70px 0;
+
+}
+.reviews .max-width .reviews-head{
+       margin-bottom: 50px;
+}
+
+
+
+.reviews .max-width{
+    max-width: 1300px;
+    width: 95%;
+    
+ }
+ .image-list{
+     display: grid;
+     gap: 20px;
+     overflow-x: auto;
+     scrollbar-width: none;
+     grid-template-columns: repeat(8 , 1fr);
+ }
+ .image-list::-webkit-scrollbar{
+     display: none;
+ }
+ .scroll-container{
+     height: 10px;
+     display: flex;
+     align-items: center;
+     margin: 30px auto 0;
+     width: 50%;
+ }
+ .scroll-path{
+     height: 5px;
+     background-color: rgb(192, 192, 192);
+     width: 100%;
+     position: relative;
+     border-radius: 4px;
+ }
+ .scroll-thumb{
+     height:100%;
+     background-color:purple;
+     width: 50%;
+     position: absolute;
+     cursor: grab;
+     border-radius: inherit;
+ }
+ .scroll-thumb::after{
+     content: "";
+     position: absolute;
+     left: 0;right: 0;
+     top: -10px;
+     bottom: -10px;
+ }
+ .scroll-container:hover .scroll-path{
+     height: 5px;
+ }
+ .scroll-thumb:active  .scroll-path{
+     height:10px;
+ }
+ .scroll-thumb:active {
+     cursor: grabbing;
+     height: 7px;
+     top: -2px;
+ }
+ .reviews .max-width{
+     position: relative;
+ }
+ .max-width button{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     border: 1px solid purple;
+     outline: none;
+     background-color: purple;
+     color: rgb(231, 231, 231);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+ bottom: 110px;
+ cursor: pointer;
+ }
+ .max-width button:hover{
+     background:none;
+     color: purple;
+ }
+ #left{
+     left:-20px;
+     display: none;
+ }
+ #right{
+     right:-20px;
+ }
+ .image-list .re-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+    width: 300px;
+    height: 250px;
+     cursor: pointer;
+     background-color:#232323;
+     padding:0 6px;
+     border-radius: 7px;
+     transition: all 0.2s ease-in-out;
+    }
+    .image-list .re-box .text{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .image-list .re-box p{
+        text-align: center;
+     
+    }
+
+ .image-list .re-box .re-img{
+    width: 113px;
+    height: 113px;
+     background-color:purple;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .image-list .re-box .re-img img{
+    width: 100px;
+    height: 100px;
+    object-fit:  cover;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+ }
+ .image-list .re-box:hover{
+    background-color: purple;
+ }
+ .image-list .re-box:hover .re-img{
+    background-color: #FBF8F3;
+ }
+
+
+ .image-list .re-box:hover .re-img img{
+      transform: scale(1.09);
+ }
+
+/* contact section style  */
+/* responsive media */
+@media (max-width:1310px) {
+    .hero  .max-width{
+        padding: 0 50px;
+        margin-left: 0;
+    }
+    
+}
+@media (max-width:1010px) {
+   
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .hero .text-1{
+        font-size: 20px;
+    }
+.hero .text-2{
+    font-size: 50px;
+    
+}
+.hero .text-3{
+    font-size: 23px;
+    font-weight: 400;
+}
+    
+}
+@media (max-width: 950px){
+ 
+    .about .about-content column{
+     width: 50%;
+    }
+   .max-width .serv-content .card{
+        width: calc(50% - 10px);
+    }
+  .max-width  .skill-content .column{
+    margin-bottom: 50px;
+        width: 100%;
+   }
+}
+@media (max-width: 900px){
+    .about .about-content .column{
+        width: 100%;
+       }
+       .about .about-content .left{
+         margin: 0 auto 50px;
+       }
+       .contact-content .column{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .up a{
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+    }
+}
+@media (max-width:550px){
+    .max-width{
+        padding: 0 20px;
+    }
+   
+    .hero .text-1{
+        font-size: 16px;
+    }
+.hero .text-2{
+    font-size: 40px;
+    
+}
+.hero .text-3{
+    font-size: 19px;
+    font-weight: 400;
+}
+.hire a{
+    padding: 7px 20px;
+}
+.max-width .serv-content .card{
+    width: 100%;
+}
+.max-width .title{
+    font-size: 30px;
+}
+#left{
+    left:-14px;
+    
+}
+#right{
+    right:-14px;
+}
+.max-width .title::after{
+    font-size: 14px;
+    top: 38px;
+}
+
+}

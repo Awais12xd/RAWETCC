@@ -1,0 +1,192 @@
+table{
+    width: 70%;
+   
+    /* border: 2px solid yellow; */
+    
+}
+table .table-head tr th{
+    padding: 10px 0;
+     background-color: #f1f1f1;
+}
+
+table .table-body tr td{
+    width: 20%;
+    
+}
+table .table-body tr td.name{
+   font-size: 17px;
+   font-weight: 600;
+   text-align: center;
+   
+}
+
+table .table-body tr td img{
+    /* margin-left: 60px; */
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    
+}
+table .table-body tr td .b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table .table-body tr td .b p{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+table .table-body tr td .b button{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table .table-body tr td .b button:hover{
+    background-color: rgb(214, 214, 214);
+}
+table .table-body tr td.price{
+    text-align: center;
+    font-size: 20px;
+}
+
+table .table-body tr td.remove button{
+    margin-left: 50px;
+   padding: 7px 10px;
+   border-radius: 50%;
+   border: 2px solid purple;
+   color: white;
+    background-color: purple;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+table .table-body tr td.remove button:hover{
+    color: purple;
+    background-color: transparent;
+}
+
+.cart-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 10px;
+    gap: 20px 0;
+}
+.cart-box .summary{
+    width: 26%;
+    border: 2px solid purple;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    height: 300px;
+}
+.cart-box .summary h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: purple;
+    font-weight: 500;
+    
+}
+.cart-box .summary .total-quantities{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: black;
+}
+.cart-box .summary .total-quantities h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.cart-box .summary .total-quantities p{
+    font-size: 19px;
+}
+.cart-box .summary .total-prize{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+color: black;
+}
+.cart-box .summary .total-prize h2{
+    font-size: 20px;
+    
+    font-weight: 400;
+}
+.cart-box .summary .tax{
+    font-size: 10px;
+    margin: 10px 0;
+}
+.cart-box .summary button{
+    height: 50px;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.cart-box .summary button:hover{
+    color: purple;
+    background-color: transparent;
+}
+
+
+@media (max-width:900px){
+    table{
+        width: 100%;
+    }
+   .cart-box  .summary{
+        width: 100%;
+    }
+    
+}
+@media (max-width:650px){
+    table .table-head{
+        display: none;
+    }
+    table .table-body tr{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 10px 0;
+    }
+    table .table-body tr td {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    table .table-body tr td.remove{
+        /* border: 2px solid yellow; */
+        display: grid;
+        margin-right: 50px;
+        place-items: center;
+    }
+    table .divider{
+        height: 2px;
+        background-color: rgb(181, 181, 181);
+        color: black;
+        width: 80%;
+    }
+
+
+}
